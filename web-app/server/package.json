@@ -1,0 +1,24 @@
+{
+  "name": "web-app-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/.bin/webpack --output-filename dist/bundle.js",
+    "start": "yarn build && node dist/bundle.js"
+  },
+  "author": "Vijai Ramcharan",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "bwa-convert-degrees": "1.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.13.2",
+    "babel-loader": "^6.2.4",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-2": "^6.18.0",
+    "webpack": "^3.6.0"
+  }
+}
